@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-bbr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho de Compra</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .cart-container {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .product {
+            border-bottom: 1px solid #ccc;
+            padding: 10px 0;
+            display: flex;
+            align-items: center;
+        }
+        .product img {
+            max-width: 80px;
+            margin-right: 10px;
+        }
+        .product-info {
+            flex: 1;
+        }
+        .totals {
+            margin-top: 20px;
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <div class="cart-container">
+        <h1>Carrinho de Compra</h1>
+        <div class="cart">
+            <div class="product">
+                <img src="product.thumbnail" alt="Imagem do produto">
+                <div class="product-info">
+                    <h3>Sapato</h3>
+                    <p>Preço unitário: R$ 50,00</p>
+                    <p>Quantidade: 3</p>
+                    <p>Total: R$ 150,00</p>
+                    <p>Desconto: 10%</p>
+                    <p>Preço com desconto: R$ 135,00</p>
+                </div>
+            </div>
+            <div class="totals">
+                <p>Total de produtos: 3</p>
+                <p>Quantidade total: 3</p>
+                <p>Total: R$ 150,00</p>
+                <p>Total com desconto: R$ 135,00</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
